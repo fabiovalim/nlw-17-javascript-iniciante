@@ -23,7 +23,7 @@ async function listarMetas() {
     })
 
     if(respostas.length == 0) {
-        console.los("\nNenhuma meta selecionada :(\n")
+        console.log("\nNenhuma meta selecionada :(\n")
         return
     }
 
