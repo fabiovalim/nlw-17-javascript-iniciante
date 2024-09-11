@@ -22,14 +22,14 @@ async function listarMetas() {
         instructions: false
     })
 
-    if(respostas.length == 0) {
-        console.log("\nNenhuma meta selecionada :(\n")
-        return
-    }
-
     metas.forEach((m) => {
         m.checked = false
     })
+
+    if(respostas.length == 0) {
+        console.log("\nNenhuma meta marcada :(\n")
+        return
+    }
 
     respostas.forEach((resposta) => {
         const meta = metas.find((m) => {
@@ -48,7 +48,7 @@ async function metasRealizadas() {
     })
 
     if(realizadas.length == 0) {
-        console.log("\nNão existem metas realizadas :(\n")
+        console.log("\nNenhuma meta concluída :(\n")
         return
     }
 
