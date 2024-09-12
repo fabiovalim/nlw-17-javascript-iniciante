@@ -38,7 +38,7 @@ async function listarMetas() {
     }
 
     const respostas = await checkbox({
-        message: "\n< Use as SETAS para mudar de meta, o ESPAÇO para marcar/desmarcar, e o ENTER para enviar >",
+        message: "\n< Use as SETAS para mudar de meta, o ESPAÇO para marcar/desmarcar, e o ENTER para enviar >\n",
         choices: [...metas], 
         instructions: false
     })
@@ -60,7 +60,7 @@ async function listarMetas() {
         meta.checked = true
     })
 
-    mensagem = "\nMarcação realizada com sucesso!"
+    mensagem = "\nMarcação realizada com sucesso!\n"
 }
 
 async function metasRealizadas() {
@@ -79,7 +79,7 @@ async function metasRealizadas() {
     }
 
     await select({
-        message: "Metas realizadas ( " + realizadas.length + " )\n",
+        message: "\nMetas realizadas ( " + realizadas.length + " )\n",
         choices: [...realizadas]
     })
 }
@@ -100,7 +100,7 @@ async function metasAbertas() {
     }
 
     await select({
-        message: "Metas abertas ( " + abertas.length + " )\n",
+        message: "\nMetas abertas ( " + abertas.length + " )\n",
         choices: [...abertas]
     })
 }
@@ -116,7 +116,7 @@ async function deletarMetas() {
     })
 
     const itensDeletar = await checkbox({//selecionar a meta que deseja deletar
-        message: "\n< Use as SETAS para alternar meta, o ESPAÇO para marcar/desmarcar, e o ENTER para deletar >",
+        message: "\n< Use as SETAS para alternar meta, o ESPAÇO para marcar/desmarcar, e o ENTER para deletar >\n",
         choices: [...metasDesmarcadas], 
         instructions: false
     })

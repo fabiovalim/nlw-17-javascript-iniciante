@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "value": "Caminhar 20 minutos",
+    "checked": true
+  },
+  {
+    "value": "Ler 10 páginas",
+    "checked": true
+  },
+  {
+    "value": "Beber 3L de água",
+    "checked": false
+  },
+  {
+    "value": "Meditar",
+    "checked": true
+  },
+  {
+    "value": "Correr 3 km",
+    "checked": false
+  }
+]
